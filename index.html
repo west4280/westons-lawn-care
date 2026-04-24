@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Weston’s Lawn Care</title>
+  <title>Fresh Cut Lawns</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -79,11 +79,11 @@
   </style>
 </head>
 
-<body>
+<body onload="window.print()">
 
 <header>
-  <h1>Weston’s Lawn Care</h1>
-  <p>Reliable lawn mowing in Nottawa & Collingwood</p>
+  <h1>Fresh Cut Lawns</h1>
+  <p>Affordable grass cutting by Weston</p>
 </header>
 
 <nav>
@@ -97,13 +97,13 @@
 <section id="about">
   <div class="card">
     <h2>About Me</h2>
-    <p>Hi! My name is Weston, and I'm 12 years old. I run Weston’s Lawn Care and offer lawn mowing services in the Nottawa and Collingwood area.</p>
+    <p>Hi! My name is Weston, and I'm 12 years old. I offer lawn mowing services in the Nottawa and Collingwood area. I work hard, show up on time, and make your lawn look great!</p>
   </div>
 </section>
 
 <section id="services">
   <div class="card">
-    <h2>Services</h2>
+    <h2>My Services</h2>
     <ul>
       <li>Grass cutting</li>
       <li>Leaf cleanup</li>
@@ -117,7 +117,6 @@
   <div class="card">
     <h2>Service Area</h2>
     <p>Nottawa and Collingwood, Ontario</p>
-
     <iframe
       src="https://maps.google.com/maps?q=Collingwood%20Ontario&t=&z=10&ie=UTF8&iwloc=&output=embed"
       width="100%"
@@ -131,8 +130,8 @@
 <section id="booking">
   <div class="card">
     <h2>Book a Lawn Cut</h2>
-
-    <form action="mailto:westonzavitz@gmail.com" method="POST" enctype="text/plain">
+    <form action="https://formspree.io/f/xbdqqwzo" method="POST">
+      <input type="hidden" name="_subject" value="New Lawn Booking!">
       <label>Name:</label>
       <input type="text" name="Name" required>
 
@@ -143,7 +142,7 @@
       <input type="date" name="Date" required>
 
       <label>Notes:</label>
-      <textarea name="Notes"></textarea>
+      <textarea name="Notes" placeholder="Any details..."></textarea>
 
       <button type="submit">Submit Booking</button>
     </form>
@@ -158,8 +157,10 @@
 </section>
 
 <footer>
-  © 2026 Weston’s Lawn Care - Owned and operated by Weston
+  © 2026 Fresh Cut Lawns - Owned and operated by Weston
 </footer>
+
+
 
 </body>
 </html>
